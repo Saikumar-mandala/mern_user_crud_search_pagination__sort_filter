@@ -329,7 +329,7 @@ const Home = () => {
                           </td>
                           <td className="img_parent">
                             <img
-                              src={`${BASE_URL}/uploads/${element.profile}`}
+                               src={`${BASE_URL}/images/uploads/${element.profile}`}
                               alt="img"
                               style={{ width: "35px", borderRadius: "50%" }}
                             />

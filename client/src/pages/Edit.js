@@ -163,7 +163,7 @@ const Edit = () => {
           <Card className="shadow mt-3 p-3">
             <div className="profile_div text-center">
               <img
-                src={image ? preview : `${BASE_URL}/uploads/${imgdata}`}
+                src={image ? preview : `${BASE_URL}/images/uploads/${imgdata}`}
                 alt="img"
                 style={{
                   maxWidth: "56px",

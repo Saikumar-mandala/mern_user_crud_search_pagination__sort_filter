@@ -1,5 +1,7 @@
 require("dotenv").config();
 const express = require("express");
+const path = require("path");
+
 const app = express();
 const dbConnect = require("./db/conn");
 const cors = require("cors");
@@ -11,7 +13,10 @@ dbConnect();
 
 app.use(cors());
 app.use(express.json());
-app.use("/uploads", express.static("./uploads"));
+// app.use("/public", express.static("./public"));
+app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
+
+
 app.use("/files", express.static("./public/files"));
 app.use(router);
 
